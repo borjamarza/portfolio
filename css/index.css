@@ -1,7 +1,29 @@
 *{
 	margin: 0;
-	padding: 0;
+	padding: 0;,
+	font-family:Helvetica, Georgia;
 }
+h2:hover{
+	cursor: pointer;
+	color: #28e;
+}
+.titulo-descripcion:hover{
+	cursor:pointer;
+}
+.iconos-skills:hover{
+	cursor: pointer;
+}
+.div-img-servicios:hover{
+	cursor: pointer;
+}
+.texto-servicios:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.div-paginas-git:hover{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
 
 
 /*Diseño para dispositivos moviles*/
@@ -20,7 +42,6 @@
 			text-decoration: none;
 		}
 		.pagina-portafolio{	
-			padding: 15%;
 			font-size: 20px;
 			cursor: pointer;
 			color: #FFFFFF;
@@ -42,17 +63,232 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin-top: 15px;
 			color: #FFFFFF;
 		}
 		.texto-descripcion{
 			text-align: center;
 			padding: 1%;
 		}
+		.texto-descripcion:hover{
+			text-decoration: underline;
+			cursor: pointer;
+		}
 		.titulo-descripcion{
+			font-size: 25px;
 			text-align: center;
 			padding: 1%;
-			margin: 5px;
+		}
+		.apellido{
+			display: none;
+		}
+		/* Section About*/
+
+		.div-about{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			margin-top: 15px;
+		}
+		.texto-about{
+			margin: 15px;
+			text-align: center;
+		}
+		.primer-texto{
+			font-size: 18px;
+			margin-top: 15px;
+			display: flex;
+			justify-content: center;
+		}
+		.segundo-texto{
+			font-size: 15px;
+			margin-top: 15px;
+			display: flex;
+			justify-content: center;
+		}
+		.boton-about{
+			margin-top: 5px;
+			box-sizing: border-box;
+			padding: 5px 5px;
+			background-color: #28e;
+			color: #fff;
+			border:none;
+			border-radius: 20%;
+			font-size: 12px;
+			width: auto;
+		}
+		.enlacedescarga{
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		/* SECCION MY SKILLS */
+
+		.div-skills{
+			margin-top: 25px;
+		}
+
+		.div-myskills{
+			margin-top: 50px;
+		}
+		.div-titulomyskills{
+			text-align: center;
+		}
+		.grid-iconosskills{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.iconos-skills:hover{
+			cursor: pointer;
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
+		}
+		.iconos-skills{
+			padding: 10px;
+		}
+
+		/*SECCION SERVICES*/
+
+		.cabeceraservicios{
+			margin-top: 50px;
+    		text-align: center;
+		}
+		.titulo-servicios{
+
+		}
+		.subtitulo-servicios{
+			margin-top: 15px;
+		}
+		.contenedor-servicio{
+			display: grid;
+			flex-direction: column;
+			margin-top: 25px;
+		}
+		.img-servicios{
+			display: grid;
+			text-align: center;
+			margin: 15px;
+		}
+		/* SECCION GIT HUB*/
+
+		.div-git{
+			margin-top: 50px;
+			text-align: center;
+		}
+		.subtitulo-git{
+			margin-top: 15px;
+		}
+		.div-iconos-git{
+			display: flex;
+			flex-direction: column;
+			margin-top: 25px;
+		}
+		.div-paginas-git{
+			padding-top: 15px;
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		/*CONTACTO SECCION*/	
+
+		.div-redessociales{
+			text-align: center;
+   			margin-top: 50px;
+		}
+		.subtituloformulario{
+			margin-top: 15px;
+		}
+		.div-iconosredessociales{
+			display: flex;
+   			flex-direction: column;
+    		text-align: center;
+    		justify-content: center;
+    		margin-top: 25px;
+		}
+		.iconos-redessociales{
+			padding-top: 15px;
+			text-decoration: none;
+			color: #000000;
+		}
+		.mensaje-iconos{
+			display: flex;
+			justify-content: center;
+		}
+
+		/*footer*/
+
+		.derechos{
+		background:#8294bb;
+		display: block;
+  		text-align: center;
+  		margin-top: 50px;
+		}
+		.img-derechos{
+			margin-top: 5px;
+		}
+		.derechos-reservados{
+			color: #FFFFFF;
+			padding-bottom: 5px;
+		}
+}
+
+/*Estilos para tabletas*/
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+	.cabecera{
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url(../img/code-g28ec04107_1280.jpg);
+		}
+		.div-menu{
+			display: none;
+		}
+		.menu-navegacion{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			text-decoration: none;
+			padding: 20px;
+		}
+		.pagina-portafolio{	
+			
+			font-size: 20px;
+			cursor: pointer;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		.paginas{
+				color: #87CEFA;
+		}
+		.div-logo{
+			display: flex;
+			justify-content: center;
+			padding: 25px;
+		}
+		.logo{
+			width: 100px;
+			transition: width 3s height 6s;
+			border-radius: 35%;
+		}
+		.logo:hover{
+			width: 100%;
+		}
+		.hamburger{
+			display: none;
+		}
+		.texto-cabecera{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+			color: #FFFFFF;
+		}
+		.texto-descripcion{
+			text-align: center;
+		}
+		.texto-descripcion:hover{
+			cursor: pointer;
+		}
+		.titulo-descripcion{
+			text-align: center;	
 		}
 		/* Section About*/
 
@@ -101,11 +337,11 @@
 			text-align: center;
 		}
 		.grid-iconosskills{
-			margin-top: 20px;
+			margin-top: 25px;
 			margin: 15px;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-between;
+			justify-content: space-evenly;
 		}
 		.iconos-skills{
 			padding: 5px;
@@ -126,6 +362,7 @@
 		.contenedor-servicio{
 			display: grid;
 			flex-direction: column;
+			margin-top: 25px;
 		}
 		.img-servicios{
 			display: grid;
@@ -138,14 +375,19 @@
 			margin-top: 50px;
 			text-align: center;
 		}
+		.subtitulo-git{
+			margin-top: 15px;
+		}
 		.div-iconos-git{
 			display: flex;
-			flex-direction: column;
-			margin: 15px;
+    		text-align: center;
+    		justify-content: space-around;
+			margin-top: 25px;
 		}
 		.div-paginas-git{
 			padding-top: 15px;
 			text-align: center;
+			width: 50%;
 		}
 
 		/*CONTACTO SECCION*/	
@@ -154,15 +396,19 @@
 			text-align: center;
    			margin-top: 50px;
 		}
+		.subtituloformulario{
+			margin-top: 15px;
+		}
 		.div-iconosredessociales{
 			display: flex;
-   			flex-direction: column;
     		text-align: center;
-    		justify-content: center;
-    		margin-top: 15px;
+    		justify-content: space-around;
+    		margin-top: 25px;
 		}
 		.iconos-redessociales{
 			padding-top: 15px;
+			text-decoration: none;
+			color: #000000;
 		}
 		.mensaje-iconos{
 			display: flex;
@@ -176,5 +422,211 @@
 		display: block;
   		text-align: center;
   		margin-top: 50px;
+		}
+		.img-derechos{
+			margin-top: 5px;
+		}
+		.derechos-reservados{
+			color: #FFFFFF;
+			padding-bottom: 5px;
+		}
+}
+
+/* Estilos para computadoras */
+
+@media screen and (min-width: 769px) {
+	.cabecera{
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%), url(../img/code-g28ec04107_1280.jpg);
+		}
+		.div-menu{
+			display: none;
+		}
+		.menu-navegacion{
+			display: flex;
+			justify-content: space-around;
+			text-decoration: none;
+			padding: 20px;
+		}
+		.pagina-portafolio{	
+			font-size: 20px;
+			cursor: pointer;
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		.paginas{
+			color: #28e;
+		}
+		.div-logo{
+			display: flex;
+			justify-content: center;
+			padding: 25px;
+		}
+		.logo{
+			width: 100px;
+			border-radius: 35%;
+		}
+		.hamburger{
+			display: none;
+		}
+		.texto-cabecera{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: #FFFFFF;
+		}
+		.texto-descripcion{
+			text-align: center;
+		}
+		.texto-descripcion:hover{
+			cursor: pointer;
+		}
+		.titulo-descripcion{
+			text-align: center;
+			
+			
+		}
+		/* Section About*/
+
+		.div-about{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			margin-top: 15px;
+		}
+		.texto-about{
+			margin: 0px 50px;
+			text-align: center;
+		}
+		.primer-texto{
+			margin-top: 15px;
+			display: flex;
+			justify-content: center;
+		}
+		.segundo-texto{
+			margin-top: 15px;
+			display: flex;
+			justify-content: center;
+		}
+		.tercer-texto{
+			margin: 25px;
+		}
+		.boton-about{
+			margin-top: 20px;
+			box-sizing: border-box;
+			padding: 5px 5px;
+			background-color: #28e;
+			color: #fff;
+			border:none;
+			border-radius: 20%;
+			font-size: 12px;
+			width: auto;
+		}
+		.enlacedescarga{
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		/* SECCION MY SKILLS */
+
+		.div-myskills{
+			margin-top: 50px;
+		}
+		.div-titulomyskills{
+			text-align: center;
+		}
+		.grid-iconosskills{
+			margin-top: 25px;
+			margin: 15px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+		.iconos-skills{
+			padding: 5px;
+		}
+
+		/*SECCION SERVICES*/
+
+		.cabeceraservicios{
+			margin-top: 50px;
+    		text-align: center;
+		}
+		.titulo-servicios{
+
+		}
+		.subtitulo-servicios{
+			margin-top: 15px;
+		}
+		.contenedor-servicio{
+			display: grid;
+			flex-direction: column;
+			margin-top: 25px;
+		}
+		.img-servicios{
+			display: grid;
+			text-align: center;
+			margin: 15px;
+		}
+		/* SECCION GIT HUB*/
+
+		.div-git{
+			margin-top: 50px;
+			text-align: center;
+		}
+		.subtitulo-git{
+			margin-top: 15px;
+		}
+		.div-iconos-git{
+			display: flex;
+    		text-align: center;
+    		justify-content: space-around;
+			margin-top: 25px;
+		}
+		.div-paginas-git{
+			padding-top: 15px;
+			text-align: center;
+			width: 50%;
+		}
+
+		/*CONTACTO SECCION*/	
+
+		.div-redessociales{
+			text-align: center;
+   			margin-top: 50px;
+		}
+		.subtituloformulario{
+			margin-top: 15px;
+		}
+		.div-iconosredessociales{
+			display: flex;
+    		text-align: center;
+    		justify-content: space-around;
+    		margin-top: 25px;
+		}
+		.iconos-redessociales{
+			padding-top: 15px;
+			text-decoration: none;
+			color: #000000;
+		}
+		.mensaje-iconos{
+			display: flex;
+			justify-content: center;
+		}
+
+		/*footer*/
+
+		.derechos{
+		background:#8294bb;
+		display: block;
+  		text-align: center;
+  		margin-top: 50px;
+		}
+		.img-derechos{
+			margin-top: 5px;
+		}
+		.derechos-reservados{
+			color: #FFFFFF;
+			padding-bottom: 5px;
+
 		}
 }
